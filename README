@@ -1,3 +1,5 @@
 HackSat One
-https://flux.org.uk/projects/hacksat
+This code will form the payload of HackSat One.
+See https://flux.org.uk/projects/hacksat for details.
 
+Makes use of Energia, a port of Arduino to MSP430: http://energia.nu
