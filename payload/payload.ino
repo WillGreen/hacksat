@@ -7,7 +7,7 @@
 #include <temp.h>
 
 // enable output for radio and/or serial
-#define USERADIO 0
+#define USERADIO 1
 #define USESERIAL 1  // disable when off LaunchPad
 
 // delay between steps in milliseconds
