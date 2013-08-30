@@ -8,7 +8,7 @@
 
 // enable output for radio and/or serial
 #define USERADIO 1
-#define USESERIAL 1  // disable when off LaunchPad
+#define USESERIAL 0  // disable when off LaunchPad
 
 // delay between steps in milliseconds
 #define DELAY 2000
@@ -135,7 +135,7 @@ void broadcast(char *str)
         Serial.print(str);
     if (USERADIO)
     {
-        int transmission_time = timed_transmit(str, 1);
+        int transmission_time = timed_transmit(str, 0);
         if (USESERIAL)  // display information on transmission
         {  
             char time_buf[40];
