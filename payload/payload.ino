@@ -46,7 +46,6 @@ SpriteRadio radio = SpriteRadio(prn2, prn3);  // alternate between PRNs
 SpriteGyro gyro = SpriteGyro();
 SpriteMag mag = SpriteMag();
 char sbuf[40];  // sprintf buffer
-unsigned char step;  // variable in flash for saving the current step
 
 void setup() 
 {
@@ -57,7 +56,7 @@ void setup()
     mainTempRead();  // skip first reading as it may be spurious
     gyroTempRead();  //    "    " 
 
-    randomSeed(analogRead(2));  // seed RNG from unused pin
+    randomSeed(analogRead(0));  // seed RNG from unused pin, this doesn't work at present
 
     if (USERADIO)
         radio.txInit();
