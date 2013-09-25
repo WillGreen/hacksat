@@ -1,5 +1,9 @@
 HackSat One
-This code will form the payload of HackSat One.
-See https://flux.org.uk/projects/hacksat for details.
+===========
+HackSat One is a tiny satellite sprite, launching as part of the KickSat swarm. The sprite is powered by its own solar panel and is capable of broadcasting signals back to Earth. See https://flux.org.uk/projects/hacksat for details.
 
-Makes use of Energia, a port of Arduino to MSP430: http://energia.nu
+Development has been via Energia, a port of Arduino to MSP430: http://energia.nu.
+NB. As of September 2013, the official release of Energia doesn't support the F5xxx MCU used by HackSat.
+
+The 'payload' directory contains the sprite code.
+The 'resources' directory contains mission decals.
